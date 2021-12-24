@@ -1,10 +1,11 @@
+from itertools import combinations
 n=int(input())
 ni=input().split()
 k=int(input())
-letters=list(combinations(ni,k))
+letters=list(combinations(ni,k))  #itertools.combinations  # without list value will not be displayed 
 counta= 0
 for i in letters:
     if 'a' in i:
       counta += 1
-probability=counta/len(letters)
-print('%.4f'%probability)
+probability=counta/len(letters)    # output 
+print('%.4f'%probability)   # rounding of output
