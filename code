@@ -1,0 +1,10 @@
+n=int(input())
+ni=input().split()
+k=int(input())
+letters=list(combinations(ni,k))
+counta= 0
+for i in letters:
+    if 'a' in i:
+      counta += 1
+probability=counta/len(letters)
+print('%.4f'%probability)
